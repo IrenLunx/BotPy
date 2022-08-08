@@ -13,7 +13,7 @@ async def answer_start_command(message: types.Message):
 @dp.message_handler(text=['Привет', 'Начать'])
 async def answer_start_text(message: types.Message):
     await message.answer(text='Опа!')
-
+    print(message)
 # Объединение функции
 # @dp.message_handler(commands='start')
 # @dp.message_handler(text=['Привет', 'Начать'])
